@@ -17,6 +17,9 @@ class MealsScreen extends StatelessWidget {
       itemCount: meals.length,
       itemBuilder: (ctx, index) => Text(
         meals[index].title,
+        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+              color: Theme.of(context).colorScheme.onBackground,
+            ),
       ),
     );
 
